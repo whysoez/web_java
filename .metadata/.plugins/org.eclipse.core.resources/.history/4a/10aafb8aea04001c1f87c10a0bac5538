@@ -1,0 +1,139 @@
+package project_javacore;
+
+public class Product implements IProduct{
+
+	private String producId;
+	// Ma san pham, bat dau bang chu "C" va phai la duy nhat
+	private String productName;
+	// Ten san pham, bao gom 5-60 ky tu va la duy nhat
+	private String title;
+	// Tieu de, bao gom 5-30 ky tu
+	private float importPrice;
+	// Gia san pham, la so thuc lon hon 0
+	private float exportPrice;
+	// Gia ban san pham, so thuc co gia tri lon hon gia ban it nhat MIN_RATE lan
+	private float profit;
+	// Loi nhuan san pham, tinh bang cong thuc profit = exportPrice - importPrice
+	private String descreptions;
+	// Mo ta san pham, khi nhap khong duoc de trong
+	private boolean productStatus;
+	// Trang thai san pham, chi nhan gia tri true hoac false
+	private Categories catalog;
+	// Danh muc san pham cua san pham
+	
+	// Contructors
+	
+	public Product() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public Product(String producId, String productName, String title, float importPrice, float exportPrice,
+			float profit, String descreptions, boolean productStatus, Categories catalog) {
+		super();
+		this.producId = producId;
+		this.productName = productName;
+		this.title = title;
+		this.importPrice = importPrice;
+		this.exportPrice = exportPrice;
+		this.profit = profit;
+		this.descreptions = descreptions;
+		this.productStatus = productStatus;
+		this.catalog = catalog;
+	}
+
+	
+	// Getters, Setters
+	
+
+	public String getProducId() {
+		return producId;
+	}
+
+	public void setProducId(String producId) {
+		this.producId = producId;
+	}
+
+	public String getProductName() {
+		return productName;
+	}
+
+	public void setProductName(String productName) {
+		this.productName = productName;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
+	public float getImportPrice() {
+		return importPrice;
+	}
+
+	public void setImportPrice(float importPrice) {
+		this.importPrice = importPrice;
+	}
+
+	public float getExportPrice() {
+		return exportPrice;
+	}
+
+	public void setExportPrice(float exportPrice) {
+		this.exportPrice = exportPrice;
+	}
+
+	public float getProfit() {
+		return profit;
+	}
+
+	public void setProfit(float profit) {
+		this.profit = profit;
+	}
+
+	public String getDescreptions() {
+		return descreptions;
+	}
+
+	public void setDescreptions(String descreptions) {
+		this.descreptions = descreptions;
+	}
+
+	public boolean isProductStatus() {
+		return productStatus;
+	}
+
+	public void setProductStatus(boolean productStatus) {
+		this.productStatus = productStatus;
+	}
+
+	public Categories getCatalog() {
+		return catalog;
+	}
+
+	public void setCatalog(Categories catalog) {
+		this.catalog = catalog;
+	}
+
+	@Override
+	public void inputData() {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void displayData() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void calProfit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

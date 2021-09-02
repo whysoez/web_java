@@ -1,0 +1,8 @@
+package project_javacore;
+
+public interface ICategories {
+	// Nhap thong tin danh muc san pham
+	public void inputData();
+	// Hien thi thong tin danh muc san pham
+	public void displayData();
+}
